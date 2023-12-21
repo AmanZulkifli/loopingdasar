@@ -1,0 +1,28 @@
+function paktor(n) {
+    let faktor = 1;
+
+    for (let i = 1; i <= n; i++ ) {
+        // faktor = faktor*i;
+        faktor *= i;
+    }
+
+    return faktor;
+};
+
+let nomer = prompt("masukan angka, tolong jangan lebih dari 10");
+let hasil = paktor(nomer);
+
+console.log(`Faktorial dari ${nomer} adalah ${hasil}`);
+
+// yang di komen ga bisa
+//
+//n = prompt();
+// faktor = 1
+// if (n == Number) {
+//     for(let i = 1; i <= n; i++) {
+//         faktor *= i;
+//     }
+//     return faktor;
+// } else;
+// hasil = faktor;
+// console.log(`Faktorial dari ${n} adalah ${hasil}`);
